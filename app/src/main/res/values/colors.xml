@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F6F6F6</color>
+    <color name="colorPrimaryDark">#09061a</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="edittextBackground">#c9c9c9</color>
+    <color name="signinhintcolor">#000000</color>
+    <color name="signinbackground">#09061a</color>
+    <color name="signinbutton">#00574B</color>
+    <color name="hamburger_header">#386896</color>
+</resources>

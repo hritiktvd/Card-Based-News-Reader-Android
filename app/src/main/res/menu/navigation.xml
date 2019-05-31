@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_tech"
+        android:icon="@drawable/ic_action_technology"
+        android:title="@string/title_technology" />
+
+    <item
+        android:id="@+id/navigation_sports"
+        android:icon="@drawable/ic_action_sports"
+        android:title="@string/title_sports" />
+
+    <item
+        android:id="@+id/navigation_politics"
+        android:icon="@drawable/ic_action_politics"
+        android:title="@string/title_politics" />
+
+
+</menu>
