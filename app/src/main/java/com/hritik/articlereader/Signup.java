@@ -32,7 +32,7 @@ public class Signup extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i_home = new Intent(Signup.this, Main_hamburger.class);
+                Intent i_home = new Intent(Signup.this, Hamburger_menu.class);
                 startActivity(i_home);
 
             }

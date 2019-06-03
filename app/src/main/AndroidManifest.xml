@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/articlereader_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme_noactionbar">
-        <activity
-            android:name=".Main_hamburger"
-            android:label="@string/title_activity_main_hamburger"
-            android:theme="@style/AppTheme_noactionbar.NoActionBar"></activity>
+
         <activity
             android:name=".Bottom_navbar"
             android:label="@string/title_activity_bottom_navbar" />
