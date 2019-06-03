@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Switiching to the next screen
                 Intent i_home = new Intent(MainActivity.this, Hamburger_menu.class);
                 startActivity(i_home);
             }

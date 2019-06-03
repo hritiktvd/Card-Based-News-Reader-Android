@@ -1,3 +1,7 @@
+/*
+
+NOT USING THIS ANYMORE.
+
 package com.hritik.articlereader;
 
 import android.os.Bundle;
@@ -58,3 +62,4 @@ public class Bottom_navbar extends AppCompatActivity implements BottomNavigation
     }
 
 }
+*/
