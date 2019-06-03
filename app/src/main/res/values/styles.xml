@@ -18,6 +18,8 @@
     <style name="AppTheme_noactionbar.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="actionBarItemBackground">@color/hamburger_header</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
     </style>
 
     <style name="AppTheme_noactionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
