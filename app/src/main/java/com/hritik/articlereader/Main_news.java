@@ -1,3 +1,4 @@
+/*
 package com.hritik.articlereader;
 
 import android.content.Context;
@@ -51,3 +52,4 @@ public class Main_news extends AppCompatActivity {
 
 
 }
+*/

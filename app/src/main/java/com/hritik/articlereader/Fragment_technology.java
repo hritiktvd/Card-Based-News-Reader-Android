@@ -24,6 +24,7 @@ public class Fragment_technology extends Fragment {
     @Override
     //layoutinflater is used to bring up the selected layout
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
         view = inflater.inflate(R.layout.fragment_technology, container, false);
 
         // 1. get a reference to recyclerView
@@ -31,6 +32,7 @@ public class Fragment_technology extends Fragment {
 
         // 2. set layoutManger
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
 
         newsList = new ArrayList<>();
 

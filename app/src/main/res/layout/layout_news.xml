@@ -5,9 +5,11 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
+        android:id="@+id/news_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:onClick="news_article">
 
         <RelativeLayout
             android:layout_width="match_parent"
