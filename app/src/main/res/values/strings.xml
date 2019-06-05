@@ -15,6 +15,8 @@
     <string name="hamburger_hello">Hello User</string>
     <string name="hamburger_menu_open">Open Menu</string>
     <string name="hamburger_menu_close">Close Menu</string>
+    <string name="tech_description">The latest news app in the market.The fastest news app in the town</string>
+    <string name="tech_title">The new App</string>
 
 
     <!--pre defined-->
