@@ -22,7 +22,7 @@
                 android:layout_width="120dp"
                 android:layout_height="90dp"
                 android:padding="4dp"
-                android:src="@drawable/logosmall" />
+                android:src="@drawable/tcc" />
 
             <TextView
                 android:id="@+id/headline"

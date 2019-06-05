@@ -39,27 +39,27 @@ public class Fragment_sports extends Fragment {
                 new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
 
         newsList.add(
-                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
+                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.tcc));
         newsList.add(
                 new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
         newsList.add(
-                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
+                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.tcc));
 
         newsList.add(
                 new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
 
         newsList.add(
-                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
+                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.tcc));
         newsList.add(
                 new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
         newsList.add(
-                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
+                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.tcc));
 
         newsList.add(
                 new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
 
         newsList.add(
-                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.logosmall));
+                new News_list("Modi Won", "Clean sweep by Modi. 352 seats for BJP.", R.drawable.tcc));
 
 
         // 3. create an adapter

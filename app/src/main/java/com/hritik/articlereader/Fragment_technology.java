@@ -42,11 +42,11 @@ public class Fragment_technology extends Fragment {
                 new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.logosmall));
 
         newsList.add(
-                new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.logosmall));
+                new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.tcc));
         newsList.add(
                 new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.logosmall));
         newsList.add(
-                new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.logosmall));
+                new News_list("E3 is next week", "Upcoming E3 will be held in Los Angeles.", R.drawable.tcc));
 
 
         // 3. create an adapter
