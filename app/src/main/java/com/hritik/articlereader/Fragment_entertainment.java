@@ -42,7 +42,7 @@ public class Fragment_entertainment extends Fragment {
         view = inflater.inflate(R.layout.fragment_entertainment, container, false);
 
         //Loading Dialog Box
-        progressDialog = ProgressDialog.show(getActivity(), "Loading...", "Please Wait", true);
+        progressDialog = ProgressDialog.show(getActivity(), "", "Entertainment on your way", true);
         progressDialog.show();
 
         /*Create handle for the RetrofitInstance interface*/
