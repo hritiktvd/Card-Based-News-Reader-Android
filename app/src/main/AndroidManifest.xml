@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hritik.articlereader">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/articlereader"
@@ -13,10 +15,6 @@
             android:name=".Hamburger_menu"
             android:label="@string/title_activity_hamburger_menu"
             android:theme="@style/AppTheme_noactionbar.NoActionBar"></activity>
-        <activity android:name=".Main_hamburger" />
-        <activity
-            android:name=".Bottom_navbar"
-            android:label="@string/title_activity_bottom_navbar" />
         <activity android:name=".WelcomeScreen" />
         <activity android:name=".Signup" />
         <activity android:name=".Splash">
@@ -26,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />'
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
