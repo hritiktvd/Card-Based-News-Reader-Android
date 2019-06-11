@@ -44,7 +44,7 @@ public class Bottom_navbar extends AppCompatActivity implements BottomNavigation
                 fragment = new Fragment_sports();
                 break;
             case R.id.navigation_politics:
-                fragment = new Fragment_politics();
+                fragment = new Fragment_entertainment();
                 break;
         }
         return loadFragment(fragment);

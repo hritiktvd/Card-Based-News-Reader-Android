@@ -13,9 +13,9 @@
         android:title="@string/title_sports" />
 
     <item
-        android:id="@+id/navigation_politics"
-        android:icon="@drawable/ic_action_politics"
-        android:title="@string/title_politics" />
+        android:id="@+id/navigation_entertainment"
+        android:icon="@drawable/ic_hamburger_entertainment"
+        android:title="@string/title_entertainment" />
 
 
 </menu>

@@ -153,8 +153,8 @@ public class Hamburger_menu extends AppCompatActivity
                 fragment = new Fragment_sports();
                 break;
 
-            case R.id.navigation_politics:
-                fragment = new Fragment_politics();
+            case R.id.navigation_entertainment:
+                fragment = new Fragment_entertainment();
                 break;
         }
 
