@@ -13,10 +13,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.hritik.articlereader.adapters.Entertaiment_adapter;
-import com.hritik.articlereader.entertainment_endpoints.GetDataService;
-import com.hritik.articlereader.entertainment_model.Article;
-import com.hritik.articlereader.entertainment_model.Entertainment;
-import com.hritik.articlereader.networks.RetrofitClientInstance_entertainment;
+import com.hritik.articlereader.endpoints.GetDataService_entertainment;
+import com.hritik.articlereader.model.Article;
+import com.hritik.articlereader.model.Entertainment;
+import com.hritik.articlereader.networks.RetrofitClientInstance;
 
 import java.util.List;
 
@@ -46,12 +46,12 @@ public class Fragment_entertainment extends Fragment {
         progressDialog.show();
 
         /*Create handle for the RetrofitInstance interface*/
-        //initialize the endpoint GetDataService instance
+        //initialize the endpoint GetDataService_entertainment instance
 
 
         //The main class is Entertainment which contains article and source. So we have to call that.
         //Always call the main class.
-        GetDataService service = RetrofitClientInstance_entertainment.getRetrofitInstance().create(GetDataService.class);
+        GetDataService_entertainment service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService_entertainment.class);
         Call<Entertainment> articlecall = service.getArticleDetails();
 
         /*enqueue() asynchronously sends the request and notifies your app with a callback when a response comes back.
@@ -68,7 +68,7 @@ public class Fragment_entertainment extends Fragment {
                 if (status.equals("ok")) {
                     generateDataList(response.body().getArticles());
                 } else {
-
+                    Toast.makeText(getActivity(), "Try Again!", Toast.LENGTH_SHORT).show();
                 }
             }
 

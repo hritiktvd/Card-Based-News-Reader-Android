@@ -1,4 +1,4 @@
-package com.hritik.articlereader.entertainment_model;
+package com.hritik.articlereader.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

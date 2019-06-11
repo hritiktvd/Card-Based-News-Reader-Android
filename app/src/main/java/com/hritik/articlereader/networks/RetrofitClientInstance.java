@@ -9,7 +9,7 @@ package com.hritik.articlereader.networks;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class RetrofitClientInstance_entertainment {
+public class RetrofitClientInstance {
 
 
     public static final String BASE_URL = "https://newsapi.org";

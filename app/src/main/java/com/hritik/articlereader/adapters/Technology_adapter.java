@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adapter.EntertainmentViewHolder> {
+public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.TechnologyViewHolder> {
 
     //we are storing all the products in a list
     private List<Article> articleList;
@@ -28,25 +28,23 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
     private Context context;
 
     //getting the context and product list with constructor
-    public Entertaiment_adapter(Context context, List<Article> articleList) {
+    public Technology_adapter(Context context, List<Article> articleList) {
         this.context = context;
         this.articleList = articleList;
         this.entertainmentList = entertainmentList;
         this.sourceList = sourceList;
     }
 
-    //to create an instance of the product
     @NonNull
     @Override
-    public EntertainmentViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public TechnologyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
         View view = layoutInflater.inflate(R.layout.layout_news, parent, false);
-        return new EntertainmentViewHolder(view);
+        return new TechnologyViewHolder(view);
     }
 
-    //binding the data to the view holder
     @Override
-    public void onBindViewHolder(@NonNull EntertainmentViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull TechnologyViewHolder holder, int position) {
 
         holder.headline.setText(articleList.get(position).getTitle());
 
@@ -54,8 +52,9 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
         builder.downloader(new OkHttp3Downloader(context));
         builder.build().load(articleList.get(position).getUrlToImage())
                 .placeholder((R.drawable.ic_launcher_foreground))
-                .error(R.drawable.entertainment_error)
+                .error(R.drawable.technology_error)
                 .into(holder.thumbnail);
+
     }
 
     @Override
@@ -63,14 +62,14 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
         return articleList.size();
     }
 
-    class EntertainmentViewHolder extends RecyclerView.ViewHolder {
+    class TechnologyViewHolder extends RecyclerView.ViewHolder {
 
         public final View mView;
 
         TextView headline;
         ImageView thumbnail;
 
-        EntertainmentViewHolder(View itemView) {
+        TechnologyViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
             headline = mView.findViewById(R.id.headline);

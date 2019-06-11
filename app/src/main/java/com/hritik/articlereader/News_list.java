@@ -1,3 +1,5 @@
+/* STATIC MODEL
+
 package com.hritik.articlereader;
 
 public class News_list {
@@ -27,3 +29,4 @@ public class News_list {
 }
 
 
+*/

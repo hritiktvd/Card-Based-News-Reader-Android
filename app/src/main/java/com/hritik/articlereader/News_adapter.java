@@ -1,3 +1,5 @@
+/* STATIC MODEL ADAPTER
+
 package com.hritik.articlereader;
 
 import android.content.Context;
@@ -16,9 +18,11 @@ import java.util.List;
 public class News_adapter extends RecyclerView.Adapter<News_adapter.ProductViewHolder> {
 
 
+*/
 /*
     private View.OnClickListener clicklistener = null;
-*/
+*//*
+
 
     CardView cardView;
 
@@ -53,9 +57,11 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ProductViewH
         News_list product = productList.get(position);
         //binding the data with the viewholder views
         holder.textViewTitle.setText(product.getTitle());
+*/
 /*
         holder.textViewShortDesc.setText(product.getShortdesc());
-*/
+*//*
+
         holder.imageView.setImageDrawable(mCtx.getResources().getDrawable(product.getImage()));
 
 
@@ -86,9 +92,11 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ProductViewH
             super(itemView);
 
             textViewTitle = itemView.findViewById(R.id.headline);
+*/
 /*
             textViewShortDesc = itemView.findViewById(R.id.shortdesc);
-*/
+*//*
+
             imageView = itemView.findViewById(R.id.thumbnail);
             cardView = itemView.findViewById(R.id.news_card);
 
@@ -98,7 +106,9 @@ public class News_adapter extends RecyclerView.Adapter<News_adapter.ProductViewH
 
     }
 
+*/
 /*    public void setClicklistener (View.OnClickListener clicklistener){
         this.clicklistener = clicklistener;
-    }*/
-}
+    }*//*
+
+}*/
