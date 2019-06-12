@@ -1,7 +1,9 @@
 package com.hritik.articlereader.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.hritik.articlereader.Article_main;
 import com.hritik.articlereader.R;
 import com.hritik.articlereader.model.Article;
 import com.hritik.articlereader.model.Entertainment;
@@ -26,6 +29,9 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
     private List<Source> sourceList;
     //this context we will use to inflate the layout
     private Context context;
+    //onclick to next page
+    CardView cardView;
+
 
     //getting the context and product list with constructor
     public Entertaiment_adapter(Context context, List<Article> articleList) {
@@ -56,6 +62,14 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
                 .placeholder((R.drawable.ic_launcher_foreground))
                 .error(R.drawable.entertainment_error)
                 .into(holder.thumbnail);
+
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i_main = new Intent(context.getApplicationContext(), Article_main.class);
+                context.startActivity(i_main);
+            }
+        });
     }
 
     @Override
@@ -75,6 +89,8 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
             mView = itemView;
             headline = mView.findViewById(R.id.headline);
             thumbnail = mView.findViewById(R.id.thumbnail);
+            cardView = mView.findViewById(R.id.news_card);
+
         }
     }
 }

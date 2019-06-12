@@ -48,6 +48,7 @@ public class Fragment_technology extends Fragment {
         progressDialog = ProgressDialog.show(getActivity(), "", "Latest Technology News", true);
         progressDialog.show();
 
+
         /*Create handle for the RetrofitInstance interface*/
         //initialize the endpoint GetDataService_entertainment instance
 
@@ -90,6 +91,7 @@ public class Fragment_technology extends Fragment {
                 recyclerView.setAdapter(adapter);
             }
         });
+
 
         return view;
 

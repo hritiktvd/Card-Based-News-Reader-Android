@@ -18,6 +18,12 @@
     <string name="hamburger_menu_close">Close Menu</string>
     <string name="tech_description">The latest news app in the market.The fastest news app in the town</string>
     <string name="tech_title">The new App</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
 
 
     <!--pre defined-->
