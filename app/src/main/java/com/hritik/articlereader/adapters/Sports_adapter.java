@@ -2,6 +2,7 @@ package com.hritik.articlereader.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -64,7 +65,15 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String title = articleList.get(position).getTitle();
+                String desc = articleList.get(position).getDescription();
+
+                Bundle bundle = new Bundle();
+                bundle.putString("img_url", articleList.get(position).getUrlToImage());
+                bundle.putString("title", title);
+                bundle.putString("description", desc);
                 Intent i_main = new Intent(context.getApplicationContext(), Article_main.class);
+                i_main.putExtras(bundle);
                 context.startActivity(i_main);
             }
         });

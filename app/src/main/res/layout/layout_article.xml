@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     android:orientation="vertical">
 
     <LinearLayout
@@ -13,10 +14,11 @@
         <ImageView
             android:id="@+id/coverImage"
             android:layout_width="match_parent"
-            android:layout_height="230dp"
+            android:layout_height="300dp"
             android:layout_gravity="top"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
+            android:scaleType="fitXY"
             android:src="@drawable/tcc" />
 
         <TextView
@@ -28,7 +30,7 @@
             android:fontFamily="sans-serif-condensed-light"
             android:padding="7dp"
             android:text="@string/tech_description"
-            android:textColor="@color/signinbackground"
+            android:textColor="@color/colorPrimary"
             android:textSize="25sp"
             android:textStyle="bold" />
 
@@ -43,6 +45,8 @@
             android:padding="7dp"
             android:text="@string/lorem"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:lineHeight="30dp"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
 
     </LinearLayout>

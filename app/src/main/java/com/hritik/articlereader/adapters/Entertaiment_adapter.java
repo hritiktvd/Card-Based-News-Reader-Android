@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,6 +71,7 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
                 String title = articleList.get(position).getTitle();
                 String desc = articleList.get(position).getDescription();
 
+                Log.i("position", position + "");
                 Bundle bundle = new Bundle();
                 bundle.putString("img_url", articleList.get(position).getUrlToImage());
                 bundle.putString("title", title);
