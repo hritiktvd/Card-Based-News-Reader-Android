@@ -47,11 +47,12 @@ public class Article_main extends AppCompatActivity {
         fullarticle = findViewById(R.id.fullarticle);
         sharearticle = findViewById(R.id.sharearticle);
 
-        Bundle bundle = getIntent().getExtras();
-        String showtitle = bundle.getString("title");
-        String showdesc = bundle.getString("description");
-        String image = bundle.getString("img_url");
-        String url = bundle.getString("url");
+        Intent bundle = getIntent();
+
+        String showtitle = bundle.getStringExtra("title");
+        String showdesc = bundle.getStringExtra("description");
+        String image = bundle.getStringExtra("img_url");
+        String url = bundle.getStringExtra("url");
 
         Picasso.with(this).load(image).into(coverImage);
 

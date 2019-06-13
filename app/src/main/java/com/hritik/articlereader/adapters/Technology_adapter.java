@@ -15,8 +15,6 @@ import android.widget.TextView;
 import com.hritik.articlereader.Article_main;
 import com.hritik.articlereader.R;
 import com.hritik.articlereader.model.Article;
-import com.hritik.articlereader.model.Entertainment;
-import com.hritik.articlereader.model.Source;
 import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
@@ -26,20 +24,14 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
 
     //we are storing all the products in a list
     private List<Article> articleList;
-    private List<Entertainment> entertainmentList;
-    private List<Source> sourceList;
     //this context we will use to inflate the layout
     private Context context;
-    //onclick to next page
-    CardView cardView;
 
 
     //getting the context and product list with constructor
     public Technology_adapter(Context context, List<Article> articleList) {
         this.context = context;
         this.articleList = articleList;
-        this.entertainmentList = entertainmentList;
-        this.sourceList = sourceList;
     }
 
     @NonNull
@@ -51,7 +43,12 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TechnologyViewHolder holder, int position) {
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull TechnologyViewHolder holder, final int position) {
 
         holder.headline.setText(articleList.get(position).getTitle());
         holder.shortdesc.setText(articleList.get(position).getDescription());
@@ -63,7 +60,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
                 .error(R.drawable.technology_error)
                 .into(holder.thumbnail);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
@@ -94,6 +91,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
 
         TextView headline, shortdesc;
         ImageView thumbnail;
+        CardView cardView;
 
         TechnologyViewHolder(View itemView) {
             super(itemView);
@@ -102,6 +100,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
             thumbnail = mView.findViewById(R.id.thumbnail);
             cardView = mView.findViewById(R.id.news_card);
             shortdesc = mView.findViewById(R.id.shortdesc);
+
 
         }
     }

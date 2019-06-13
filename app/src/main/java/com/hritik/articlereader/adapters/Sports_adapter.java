@@ -15,8 +15,6 @@ import android.widget.TextView;
 import com.hritik.articlereader.Article_main;
 import com.hritik.articlereader.R;
 import com.hritik.articlereader.model.Article;
-import com.hritik.articlereader.model.Entertainment;
-import com.hritik.articlereader.model.Source;
 import com.jakewharton.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
@@ -26,19 +24,14 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
 
     //we are storing all the products in a list
     private List<Article> articleList;
-    private List<Entertainment> entertainmentList;
-    private List<Source> sourceList;
     //this context we will use to inflate the layout
     private Context context;
-    //onclick to next page
-    CardView cardView;
+
 
     //getting the context and product list with constructor
     public Sports_adapter(Context context, List<Article> articleList) {
         this.context = context;
         this.articleList = articleList;
-        this.entertainmentList = entertainmentList;
-        this.sourceList = sourceList;
     }
 
 
@@ -51,9 +44,11 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SportsViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull SportsViewHolder holder, final int position) {
 
         holder.headline.setText(articleList.get(position).getTitle());
+        holder.shortdesc.setText(articleList.get(position).getDescription());
+
 
         Picasso.Builder builder = new Picasso.Builder(context);
         builder.downloader(new OkHttp3Downloader(context));
@@ -62,7 +57,7 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
                 .error(R.drawable.sports_error)
                 .into(holder.thumbnail);
 
-        cardView.setOnClickListener(new View.OnClickListener() {
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
@@ -93,6 +88,7 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
 
         TextView headline, shortdesc;
         ImageView thumbnail;
+        CardView cardView;
 
         SportsViewHolder(View itemView) {
             super(itemView);
@@ -101,6 +97,7 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
             thumbnail = mView.findViewById(R.id.thumbnail);
             cardView = mView.findViewById(R.id.news_card);
             shortdesc = mView.findViewById(R.id.shortdesc);
+
 
         }
     }

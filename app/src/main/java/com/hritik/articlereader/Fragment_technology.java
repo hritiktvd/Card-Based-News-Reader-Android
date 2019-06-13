@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.hritik.articlereader.adapters.Technology_adapter;
@@ -28,7 +29,7 @@ public class Fragment_technology extends Fragment {
 
     View view;
     ProgressDialog progressDialog;
-    List<Technology_adapter> entertainmentList;
+    List<Article> array_List;
     private Technology_adapter adapter;
     private RecyclerView recyclerView;
 
@@ -48,6 +49,11 @@ public class Fragment_technology extends Fragment {
         progressDialog = ProgressDialog.show(getActivity(), "", "Latest Technology News", true);
         progressDialog.show();
 
+        /*to generate List of data using RecyclerView with custom adapter*/
+        recyclerView = view.findViewById(R.id.recyclerview);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayout.VERTICAL, false);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(layoutManager);
 
         /*Create handle for the RetrofitInstance interface*/
         //initialize the endpoint GetDataService_entertainment instance
@@ -70,7 +76,9 @@ public class Fragment_technology extends Fragment {
                 progressDialog.dismiss();
                 String status = response.body().getStatus();
                 if (status.equals("ok")) {
-                    generateDataList(response.body().getArticles());
+                    array_List = response.body().getArticles();
+                    adapter = new Technology_adapter(getActivity(), array_List);
+                    recyclerView.setAdapter(adapter);
                 } else {
                     Toast.makeText(getActivity(), "Try Again!", Toast.LENGTH_SHORT).show();
                 }
@@ -82,14 +90,6 @@ public class Fragment_technology extends Fragment {
                 Toast.makeText(getActivity(), "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
             }
 
-            /*Method to generate List of data using RecyclerView with custom adapter*/
-            public void generateDataList(List<Article> photoList) {
-                recyclerView = view.findViewById(R.id.recyclerview);
-                adapter = new Technology_adapter(getActivity(), photoList);
-                RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
-                recyclerView.setLayoutManager(layoutManager);
-                recyclerView.setAdapter(adapter);
-            }
         });
 
 
