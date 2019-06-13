@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "259951212957",
+    "firebase_url": "https://article-reader-56ab2.firebaseio.com",
+    "project_id": "article-reader-56ab2",
+    "storage_bucket": "article-reader-56ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259951212957:android:408a24a0238e47d0",
+        "android_client_info": {
+          "package_name": "com.hritik.articlereader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "259951212957-r11dbl06thpmqb9ldal4cqvle740trup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoucXf4OQlK1GH33h78O3rbjy9rPGtZ8I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259951212957-r11dbl06thpmqb9ldal4cqvle740trup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
