@@ -67,11 +67,13 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
                 String desc = articleList.get(position).getDescription();
+                String article_url = articleList.get(position).getUrl();
 
                 Bundle bundle = new Bundle();
                 bundle.putString("img_url", articleList.get(position).getUrlToImage());
                 bundle.putString("title", title);
                 bundle.putString("description", desc);
+                bundle.putString("url", article_url);
                 Intent i_main = new Intent(context.getApplicationContext(), Article_main.class);
                 i_main.putExtras(bundle);
                 context.startActivity(i_main);

@@ -14,10 +14,17 @@
         <activity
             android:name=".Hamburger_menu"
             android:label="@string/title_activity_hamburger_menu"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme_noactionbar.NoActionBar"></activity>
-        <activity android:name=".WelcomeScreen" />
-        <activity android:name=".Signup" />
-        <activity android:name=".Splash">
+        <activity
+            android:name=".WelcomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,6 +33,7 @@
         </activity>
         <activity
             android:name=".Article_main"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".MainActivity" />
     </application>

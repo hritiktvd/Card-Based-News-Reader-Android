@@ -14,7 +14,7 @@
         <ImageView
             android:id="@+id/coverImage"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:layout_gravity="top"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
@@ -49,6 +49,37 @@
             android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fullarticle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/rounded_signin_button"
+            android:gravity="center"
+            android:text="@string/full_article"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/sharearticle"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/rounded_signup_button"
+            android:drawableStart="@drawable/ic_share"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
 </LinearLayout>

@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_signup_button"
-                android:text="Sign Up"
+                android:text="@string/signup"
                 android:textColor="@color/colorPrimary" />
 
         </LinearLayout>

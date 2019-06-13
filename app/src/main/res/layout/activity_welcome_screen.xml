@@ -61,7 +61,7 @@
             android:layout_marginBottom="9dp"
             android:background="@drawable/rounded_signin_button"
             android:gravity="center"
-            android:text="Sign in"
+            android:text="@string/signin"
             android:textColor="@color/colorPrimary" />
 
         <Button
@@ -72,7 +72,7 @@
             android:layout_marginBottom="9dp"
             android:background="@drawable/rounded_signup_button"
             android:gravity="center"
-            android:text="sign up"
+            android:text="@string/signup"
             android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
