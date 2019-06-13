@@ -66,7 +66,7 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
             @Override
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
-                String desc = articleList.get(position).getDescription();
+                String desc = articleList.get(position).getContent();
                 String article_url = articleList.get(position).getUrl();
 
                 Bundle bundle = new Bundle();
@@ -91,7 +91,7 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
 
         public final View mView;
 
-        TextView headline;
+        TextView headline, shortdesc;
         ImageView thumbnail;
 
         SportsViewHolder(View itemView) {
@@ -100,6 +100,8 @@ public class Sports_adapter extends RecyclerView.Adapter<Sports_adapter.SportsVi
             headline = mView.findViewById(R.id.headline);
             thumbnail = mView.findViewById(R.id.thumbnail);
             cardView = mView.findViewById(R.id.news_card);
+            shortdesc = mView.findViewById(R.id.shortdesc);
+
         }
     }
 

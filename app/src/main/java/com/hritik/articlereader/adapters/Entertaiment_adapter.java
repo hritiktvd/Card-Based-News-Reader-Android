@@ -69,7 +69,7 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
             @Override
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
-                String desc = articleList.get(position).getDescription();
+                String desc = articleList.get(position).getContent();
                 String article_url = articleList.get(position).getUrl();
 
                 Log.i("position", position + "");
@@ -94,7 +94,7 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
 
         public final View mView;
 
-        TextView headline;
+        TextView headline, shortdesc;
         ImageView thumbnail;
 
         EntertainmentViewHolder(View itemView) {
@@ -102,6 +102,7 @@ public class Entertaiment_adapter extends RecyclerView.Adapter<Entertaiment_adap
             mView = itemView;
             headline = mView.findViewById(R.id.headline);
             thumbnail = mView.findViewById(R.id.thumbnail);
+            shortdesc = mView.findViewById(R.id.shortdesc);
             cardView = mView.findViewById(R.id.news_card);
 
         }

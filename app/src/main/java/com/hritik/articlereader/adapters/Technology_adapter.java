@@ -54,6 +54,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
     public void onBindViewHolder(@NonNull TechnologyViewHolder holder, int position) {
 
         holder.headline.setText(articleList.get(position).getTitle());
+        holder.shortdesc.setText(articleList.get(position).getDescription());
 
         Picasso.Builder builder = new Picasso.Builder(context);
         builder.downloader(new OkHttp3Downloader(context));
@@ -66,7 +67,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
             @Override
             public void onClick(View v) {
                 String title = articleList.get(position).getTitle();
-                String desc = articleList.get(position).getDescription();
+                String desc = articleList.get(position).getContent();
                 String article_url = articleList.get(position).getUrl();
 
                 Bundle bundle = new Bundle();
@@ -91,7 +92,7 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
 
         public final View mView;
 
-        TextView headline;
+        TextView headline, shortdesc;
         ImageView thumbnail;
 
         TechnologyViewHolder(View itemView) {
@@ -100,6 +101,8 @@ public class Technology_adapter extends RecyclerView.Adapter<Technology_adapter.
             headline = mView.findViewById(R.id.headline);
             thumbnail = mView.findViewById(R.id.thumbnail);
             cardView = mView.findViewById(R.id.news_card);
+            shortdesc = mView.findViewById(R.id.shortdesc);
+
         }
     }
 }
