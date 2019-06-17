@@ -1,14 +1,434 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="LIVE"
-        android:textSize="30dp" />
+        android:orientation="vertical">
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/aajtak"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/aajtak" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/aajtak"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/abplive" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/abplive"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/aljazeera" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/aljazeera"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bloomberg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/bloomberg"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/cbsnews" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/cbsnews"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/indiatv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/indiatv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/linustv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/linustv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nasa" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/nasa"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ndtv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/ndtv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/news24" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/news24"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/skynews" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/skynews"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tailosivetv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/tailosivetv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/timesnow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/timesow"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twittv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/twittv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/zoomtv" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/zoomtv"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/indiatoday" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/indiatoday"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

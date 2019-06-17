@@ -19,6 +19,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
+        app:itemTextColor="@color/colorPrimaryDark"
         app:headerLayout="@layout/nav_header_hamburger_menu"
         app:menu="@menu/activity_hamburger_menu_drawer" />
 

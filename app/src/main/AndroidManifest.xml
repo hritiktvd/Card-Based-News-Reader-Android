@@ -38,6 +38,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".MainActivity" />
+        <activity
+            android:name=".live.Live_aajtak"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
     </application>
 
 </manifest>
