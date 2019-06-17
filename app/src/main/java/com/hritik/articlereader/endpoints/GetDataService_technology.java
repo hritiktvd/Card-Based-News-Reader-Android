@@ -12,7 +12,7 @@ import retrofit2.http.GET;
 public interface GetDataService_technology {
 
     //We can pass the ending URL or can specify the full URL
-    @GET("/v2/top-headlines?sources=the-verge&apiKey=d6ff63172d094d7bb2ca3594cc66b2c1")
+    @GET("/v2/top-headlines?country=in&category=technology&apiKey=d6ff63172d094d7bb2ca3594cc66b2c1")
 
     //method name: can be kept anything you like
     //methodreturntype: You have to define what kind of data you expect from the server.
