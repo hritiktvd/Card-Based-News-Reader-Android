@@ -1,4 +1,4 @@
-package com.hritik.articlereader;
+package com.hritik.articlereader.fragments;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.hritik.articlereader.R;
 import com.hritik.articlereader.adapters.Sports_adapter;
 import com.hritik.articlereader.endpoints.GetDataService_sports;
 import com.hritik.articlereader.model.Article;

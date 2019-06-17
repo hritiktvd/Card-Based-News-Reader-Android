@@ -1,4 +1,4 @@
-package com.hritik.articlereader;
+package com.hritik.articlereader.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.hritik.articlereader.R;
+import com.hritik.articlereader.SessionManager;
 
 public class Fragment_profile extends Fragment {
 

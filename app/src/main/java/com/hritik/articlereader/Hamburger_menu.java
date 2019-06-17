@@ -15,6 +15,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.hritik.articlereader.fragments.Fragment_about;
+import com.hritik.articlereader.fragments.Fragment_discover;
+import com.hritik.articlereader.fragments.Fragment_entertainment;
+import com.hritik.articlereader.fragments.Fragment_live;
+import com.hritik.articlereader.fragments.Fragment_profile;
+import com.hritik.articlereader.fragments.Fragment_settings;
+import com.hritik.articlereader.fragments.Fragment_sports;
+import com.hritik.articlereader.fragments.Fragment_technology;
+
 public class Hamburger_menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
