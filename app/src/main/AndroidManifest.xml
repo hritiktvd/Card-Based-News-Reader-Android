@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.hritik.articlereader">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,12 +11,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/articlereader_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme_noactionbar">
+        android:theme="@style/AppTheme_noactionbar"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".Hamburger_menu"
             android:label="@string/title_activity_hamburger_menu"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme_noactionbar.NoActionBar"></activity>
+            android:theme="@style/AppTheme_noactionbar.NoActionBar" />
         <activity
             android:name=".WelcomeScreen"
             android:screenOrientation="portrait" />

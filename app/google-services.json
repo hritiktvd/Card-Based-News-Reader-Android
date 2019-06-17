@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "259951212957",
-    "firebase_url": "https://article-reader-56ab2.firebaseio.com",
-    "project_id": "article-reader-56ab2",
-    "storage_bucket": "article-reader-56ab2.appspot.com"
+    "project_number": "883659810444",
+    "firebase_url": "https://article-reader-e36c1.firebaseio.com",
+    "project_id": "article-reader-e36c1",
+    "storage_bucket": "article-reader-e36c1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:259951212957:android:408a24a0238e47d0",
+        "mobilesdk_app_id": "1:883659810444:android:408a24a0238e47d0",
         "android_client_info": {
           "package_name": "com.hritik.articlereader"
         }
       },
       "oauth_client": [
         {
-          "client_id": "259951212957-r11dbl06thpmqb9ldal4cqvle740trup.apps.googleusercontent.com",
+          "client_id": "883659810444-cu0s5ji9v5rnbm5bm2q3pk31s6fs3060.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hritik.articlereader",
+            "certificate_hash": "6175f8a97a3ad5ba538e58ffa4e06d47fe9b83bb"
+          }
+        },
+        {
+          "client_id": "883659810444-j4mcal2i17lni940icaiv07lankc103k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBoucXf4OQlK1GH33h78O3rbjy9rPGtZ8I"
+          "current_key": "AIzaSyDQBGNtOemy1BKdqxQ1yiMr0cVTKDO400A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "259951212957-r11dbl06thpmqb9ldal4cqvle740trup.apps.googleusercontent.com",
+              "client_id": "883659810444-j4mcal2i17lni940icaiv07lankc103k.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

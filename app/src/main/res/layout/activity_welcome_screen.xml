@@ -43,7 +43,13 @@
 
             />
 
+
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"></LinearLayout>
 
 
     <LinearLayout
@@ -54,26 +60,34 @@
         android:gravity="center|bottom"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/signin"
-            android:layout_width="160dp"
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google_signin"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="9dp"
-            android:background="@drawable/rounded_signin_button"
-            android:gravity="center"
-            android:text="@string/signin"
-            android:textColor="@color/colorPrimary" />
+            android:layout_marginBottom="10dp" />
 
-        <Button
-            android:id="@+id/signup"
-            android:layout_width="160dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="9dp"
-            android:background="@drawable/rounded_signup_button"
-            android:gravity="center"
-            android:text="@string/signup"
-            android:textColor="@color/colorPrimary" />
+        <!--        <Button
+                    android:id="@+id/signin"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/rounded_signin_button"
+                    android:gravity="center"
+                    android:text="@string/signin"
+                    android:textColor="@color/colorPrimary" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="9dp"
+                    android:background="@drawable/rounded_signup_button"
+                    android:gravity="center"
+                    android:text="@string/signup"
+                    android:textColor="@color/colorPrimary" />-->
+
+
     </LinearLayout>
 
 

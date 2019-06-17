@@ -32,7 +32,7 @@
                 android:id="@+id/thumbnail"
                 android:layout_width="wrap_content"
                 android:layout_height="230dp"
-                android:layout_below="@+id/headline"
+                android:layout_below="@+id/shortdesc"
                 android:layout_marginTop="10dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/tcc" />
@@ -42,8 +42,8 @@
                 android:id="@+id/shortdesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/thumbnail"
-                android:layout_marginLeft="5dp"
+                android:layout_below="@id/headline"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:text="@string/tech_description"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />

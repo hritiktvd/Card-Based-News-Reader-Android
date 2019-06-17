@@ -74,7 +74,7 @@ public class Article_main extends AppCompatActivity {
                 i_share.setType("text/plain");
                 String body = "Hey check out this amazing article I found  " + url +
                         "  Download Article Reader on Play Store for more amazing articles like this";
-                String sub = "Subject here";
+                String sub = "";
                 i_share.putExtra(Intent.EXTRA_SUBJECT, sub);
                 i_share.putExtra(Intent.EXTRA_TEXT, body);
                 startActivity(Intent.createChooser(i_share, "Share Using"));

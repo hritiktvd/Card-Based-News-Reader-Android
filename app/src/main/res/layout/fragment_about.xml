@@ -4,11 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:src="@drawable/logosmall" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="About Us"
+        android:text="We are a news app"
         android:textSize="30dp" />
+
 
 </LinearLayout>
