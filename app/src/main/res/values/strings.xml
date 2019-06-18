@@ -30,16 +30,17 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string
     <string name="full_article">Full Article</string>
 
     <!-- LiveNews -->
+    <string name="abcnews">ABC News</string>
+    <string name="cnnnews">CNN News 18</string>
+    <string name="newsnation">News Nation</string>
     <string name="aajtak">Aaj Tak</string>
     <string name="abplive">ABP News</string>
     <string name="aljazeera">Al-Jazeera</string>
-    <string name="bloomberg">Bloomberg</string>
     <string name="cbsnews">CBS News</string>
     <string name="indiatv">India TV</string>
     <string name="indiatoday">India Today</string>
     <string name="linustv">Linus Media</string>
     <string name="nasa">NASA</string>
-    <string name="ndtv">NDTV 24x7</string>
     <string name="republictv">Republic News</string>
     <string name="skynews">Sky News</string>
     <string name="tailosivetv">Tailosive Media</string>

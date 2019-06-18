@@ -45,7 +45,7 @@ public class Hamburger_menu extends AppCompatActivity
         });*/
 
         //To set the background color of the toolbar/actionbar
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.hamburger_header)));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.white)));
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

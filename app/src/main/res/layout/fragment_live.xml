@@ -92,23 +92,23 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/bloomberg"
+                android:id="@+id/abcnews"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="118dp"
+                    android:layout_width="118dp"
+                    android:layout_height="158dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/bloomberg" />
+                    android:src="@drawable/abcnews" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_gravity="bottom"
-                    android:text="@string/bloomberg"
+                    android:text="@string/abcnews"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimaryDark" />
@@ -231,7 +231,7 @@
             android:orientation="horizontal">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/ndtv"
+                android:id="@+id/cnnnews"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_gravity="center"
@@ -241,13 +241,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="118dp"
                     android:layout_gravity="center"
-                    android:src="@drawable/ndtv" />
+                    android:src="@drawable/cnnnews18" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="25dp"
                     android:layout_gravity="bottom"
-                    android:text="@string/ndtv"
+                    android:text="@string/cnnnews"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimaryDark" />
@@ -434,6 +434,37 @@
                     android:layout_height="25dp"
                     android:layout_gravity="bottom"
                     android:text="@string/indiatoday"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/newsnation"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/newsnation" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:text="@string/newsnation"
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textColor="@color/colorPrimaryDark" />

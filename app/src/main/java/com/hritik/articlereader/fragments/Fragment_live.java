@@ -17,7 +17,7 @@ import com.hritik.articlereader.live.Live_news;
 public class Fragment_live extends Fragment implements View.OnClickListener {
 
     View view;
-    CardView v_aajtak, v_abpnews, v_indiatv, v_indiatoday, v_ndtv, v_republictv, v_bloomberg, v_skynews, v_aljazeera, v_twittv, v_nasa, v_cbsnews, v_linustv, v_tailosivetv, v_timesnow, v_zoomtv;
+    CardView v_aajtak, v_abpnews, v_indiatv, v_indiatoday, v_cnn, v_republictv, v_abcnews, v_skynews, v_aljazeera, v_twittv, v_nasa, v_cbsnews, v_linustv, v_tailosivetv, v_timesnow, v_zoomtv, v_newsnation;
 
     @Nullable
     @Override
@@ -27,14 +27,15 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
         v_aajtak = view.findViewById(R.id.aajtak);
         v_abpnews = view.findViewById(R.id.abpnews);
         v_aljazeera = view.findViewById(R.id.aljazeera);
-        v_bloomberg = view.findViewById(R.id.bloomberg);
+        v_abcnews = view.findViewById(R.id.abcnews);
         v_indiatv = view.findViewById(R.id.indiatv);
         v_nasa = view.findViewById(R.id.nasa);
-        v_ndtv = view.findViewById(R.id.ndtv);
+        v_cnn = view.findViewById(R.id.cnnnews);
         v_republictv = view.findViewById(R.id.republictv);
         v_skynews = view.findViewById(R.id.skynews);
         v_twittv = view.findViewById(R.id.twittv);
         v_indiatoday = view.findViewById(R.id.indiatoday);
+        v_newsnation = view.findViewById(R.id.newsnation);
         //non youtube
         v_cbsnews = view.findViewById(R.id.cbsnews);
         v_linustv = view.findViewById(R.id.linustv);
@@ -45,10 +46,10 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
         v_aajtak.setOnClickListener(this);
         v_abpnews.setOnClickListener(this);
         v_aljazeera.setOnClickListener(this);
-        v_bloomberg.setOnClickListener(this);
+        v_abcnews.setOnClickListener(this);
         v_indiatv.setOnClickListener(this);
         v_nasa.setOnClickListener(this);
-        v_ndtv.setOnClickListener(this);
+        v_cnn.setOnClickListener(this);
         v_republictv.setOnClickListener(this);
         v_skynews.setOnClickListener(this);
         v_twittv.setOnClickListener(this);
@@ -58,7 +59,7 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
         v_tailosivetv.setOnClickListener(this);
         v_timesnow.setOnClickListener(this);
         v_zoomtv.setOnClickListener(this);
-
+        v_newsnation.setOnClickListener(this);
 
         return view;
     }
@@ -71,9 +72,9 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
         String aajtak = "6-S4et2YpZc";
         String indiatv = "VTEdJKJlxxc";
         String indiatoday = "E7dbhET6_EA";
-        String ndtv = "zR7HkEa3Swg";
+        String cnnnews = "VIk_6OuYkSo";
         String republictv = "X9rIbysGDxc";
-        String bloomberg = "dp8PhLsUcFE";
+        String abcnews = "BbDF_GXBmGc";
         String skynews = "lrX6ktLg8WQ";
         String aljazeera = "jL8uDJJBjMA";
         String twittv = "Y3PA5f8m8jg";
@@ -83,6 +84,7 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
         String zoomtv = "https://timesofindia.indiatimes.com/live-tv/zoom-tv/video";
         String linustv = "https://www.twitch.tv/linustech";
         String tailosivetv = "https://www.twitch.tv/tailosivetech";
+        String newsnation = "DlvSwWKafOE";
 
 
         switch (v.getId()) {
@@ -101,9 +103,9 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
                 i_aljz.putExtra("v_id", aljazeera);
                 startActivity(i_aljz);
                 break;
-            case R.id.bloomberg:
+            case R.id.abcnews:
                 Intent i_blm = new Intent(getActivity(), Live_news.class);
-                i_blm.putExtra("v_id", bloomberg);
+                i_blm.putExtra("v_id", abcnews);
                 startActivity(i_blm);
                 break;
             case R.id.cbsnews:
@@ -124,9 +126,9 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
                 i_nasa.putExtra("v_id", nasa);
                 startActivity(i_nasa);
                 break;
-            case R.id.ndtv:
+            case R.id.cnnnews:
                 Intent i_ndtv = new Intent(getActivity(), Live_news.class);
-                i_ndtv.putExtra("v_id", ndtv);
+                i_ndtv.putExtra("v_id", cnnnews);
                 startActivity(i_ndtv);
                 break;
             case R.id.republictv:
@@ -161,6 +163,12 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
                 i_itoday.putExtra("v_id", indiatoday);
                 startActivity(i_itoday);
                 break;
+            case R.id.newsnation:
+                Intent i_newsnation = new Intent(getActivity(), Live_news.class);
+                i_newsnation.putExtra("v_id", newsnation);
+                startActivity(i_newsnation);
+                break;
+
         }
 
     }
