@@ -25,7 +25,9 @@
     </style>
 
 
-    <style name="AppTheme_noactionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme_noactionbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColor">@color/black</item>
+    </style>
 
     <style name="AppTheme_noactionbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

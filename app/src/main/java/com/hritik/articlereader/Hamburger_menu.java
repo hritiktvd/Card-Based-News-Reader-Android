@@ -27,9 +27,14 @@ import com.hritik.articlereader.fragments.Fragment_technology;
 public class Hamburger_menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
 
+
     //The Default Navigation Drawer Activity was Used.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        ActionBarDrawerToggle actionBarDrawerToggle;
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hamburger_menu);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -47,7 +52,6 @@ public class Hamburger_menu extends AppCompatActivity
         //To set the background color of the toolbar/actionbar
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.white)));
 
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         //the layout and the toolbar communicate with each other by this way. The two strings
         //below are used for people with disability.
@@ -57,6 +61,7 @@ public class Hamburger_menu extends AppCompatActivity
         //To animate the three line hamburger menu icon.
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        toggle.getDrawerArrowDrawable().setColor(getResources().getColor(R.color.black));
 
         //implementing the Hamburger listener
         NavigationView navigationView = findViewById(R.id.nav_view);
