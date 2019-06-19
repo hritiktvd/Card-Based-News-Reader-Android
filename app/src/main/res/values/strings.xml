@@ -48,6 +48,32 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string
     <string name="zoomtv">Zoom TV</string>
     <string name="twittv">Twit TV</string>
 
+    <!--Discover Section-->
+    <string name="verge">The Verge</string>
+    <string name="ign">IGN</string>
+    <string name="bloomberg">Bloomberg</string>
+    <string name="buzzfeed">BuzzFeed</string>
+    <string name="engadget">Engadget</string>
+    <string name="ent_weekly">Entertainment Weekly</string>
+    <string name="huffpost">The Huffing Post</string>
+    <string name="mashable">Mashable</string>
+    <string name="mtv">MTV News</string>
+    <string name="natgeo">National Geographic</string>
+    <string name="nytimes">New York Times</string>
+    <string name="polygon">Polygon</string>
+    <string name="thehindu">The Hindu</string>
+    <string name="time">TIME</string>
+    <string name="toi">The Times of India</string>
+    <string name="wired">Wired</string>
+    <string name="wsj">The Wall Street Journal</string>
+
+    <string name="india">India</string>
+    <string name="usa">USA</string>
+    <string name="uk">United Kingdom</string>
+    <string name="aus">Australia</string>
+    <string name="nz">New Zealand</string>
+    <string name="canada">Canada</string>
+    <string name="world">World</string>
 
     <!--pre defined-->
     <string name="title_home">Home</string>

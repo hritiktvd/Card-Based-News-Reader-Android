@@ -67,8 +67,8 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        String abpnews = "vO2aWm-WAI0";
         //video id of all live channels
+        String abpnews = "vO2aWm-WAI0";
         String aajtak = "6-S4et2YpZc";
         String indiatv = "VTEdJKJlxxc";
         String indiatoday = "E7dbhET6_EA";
