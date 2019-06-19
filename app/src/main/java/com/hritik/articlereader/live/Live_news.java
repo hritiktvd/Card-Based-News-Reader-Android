@@ -11,6 +11,7 @@ package com.hritik.articlereader.live;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -28,6 +29,9 @@ public class Live_news extends YouTubeBaseActivity implements YouTubePlayer.OnIn
         super.onCreate(savedInstanceState);
         // attaching layout xml
         setContentView(R.layout.layout_live);
+
+        //full screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
 
