@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.hritik.articlereader.R;
 import com.hritik.articlereader.adapters.Technology_adapter;
@@ -33,6 +34,7 @@ public class Fragment_technology extends Fragment {
     List<Article> array_List;
     private Technology_adapter adapter;
     private RecyclerView recyclerView;
+    ViewFlipper viewFlipper;
 
 /*
     List<News_list> newsList;
@@ -49,6 +51,8 @@ public class Fragment_technology extends Fragment {
         //Loading Dialog Box
         progressDialog = ProgressDialog.show(getActivity(), "", "Latest Technology News", true);
         progressDialog.show();
+
+        viewFlipper = view.findViewById(R.id.carousel);
 
         /*to generate List of data using RecyclerView with custom adapter*/
         recyclerView = view.findViewById(R.id.recyclerview);

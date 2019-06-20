@@ -14,7 +14,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.hritik.articlereader.fragments.Fragment_about;
 import com.hritik.articlereader.fragments.Fragment_discover;
 import com.hritik.articlereader.fragments.Fragment_entertainment;
@@ -23,9 +26,12 @@ import com.hritik.articlereader.fragments.Fragment_profile;
 import com.hritik.articlereader.fragments.Fragment_settings;
 import com.hritik.articlereader.fragments.Fragment_sports;
 import com.hritik.articlereader.fragments.Fragment_technology;
+import com.makeramen.roundedimageview.RoundedImageView;
 
 public class Hamburger_menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener {
+
+    SessionManager sessionManager;
 
 
     //The Default Navigation Drawer Activity was Used.
@@ -39,6 +45,7 @@ public class Hamburger_menu extends AppCompatActivity
         setContentView(R.layout.activity_hamburger_menu);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        sessionManager = new SessionManager(this);
 
 /*        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +55,7 @@ public class Hamburger_menu extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });*/
+
 
         //To set the background color of the toolbar/actionbar
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.white)));
@@ -66,6 +74,13 @@ public class Hamburger_menu extends AppCompatActivity
         //implementing the Hamburger listener
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View header = navigationView.getHeaderView(0);
+        TextView textView = header.findViewById(R.id.hello_user);
+        RoundedImageView imageView = header.findViewById(R.id.imageView);
+        textView.setText("Hello " + sessionManager.getUserDetails().get(SessionManager.user_name));
+        Glide.with(this).load(sessionManager.getUserDetails().get(SessionManager.user_image)).asBitmap().into(imageView);
+
+
 
         //implementing the bottom navbar listener
         BottomNavigationView bottom_navigation = findViewById(R.id.bottom_navigation);

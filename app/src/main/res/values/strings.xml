@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Article Reader</string>
+    <string name="app_name">The Daily Scoop</string>
     <string name="article_reader">Article Reader</string>
     <string name="web_client_id">883659810444-j4mcal2i17lni940icaiv07lankc103k.apps.googleusercontent.com</string>
     <string name="title_activity_categories">categories</string>

@@ -43,8 +43,11 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.synnapps:carouselview:0.1.4'
     //you tube player
     implementation fileTree(dir: 'libs',includes: ['*.jar'])
+    //round image
+    implementation 'com.makeramen:roundedimageview:2.3.0'
 }
 
 apply plugin: 'com.google.gms.google-services' // Google Play services Gradle plugin

@@ -1,15 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    //Better version of list view
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
-</LinearLayout>
+        <ViewFlipper
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="top"
+            android:autoStart="true"
+            android:background="@color/black"
+            android:flipInterval="4500"
+            android:inAnimation="@android:anim/fade_in"
+            android:outAnimation="@android:anim/fade_out"
+            android:overScrollMode="always"
+            android:scrollbars="vertical">
+
+            <ImageView
+                android:id="@+id/car_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/hamburger_header"
+                android:src="@drawable/logo_banner" />
+
+            <ImageView
+                android:id="@+id/car_live"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/live_banner" />
+
+            <ImageView
+                android:id="@+id/car_discover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/discover_banner" />
+
+        </ViewFlipper>
+
+        //Better version of list view
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
