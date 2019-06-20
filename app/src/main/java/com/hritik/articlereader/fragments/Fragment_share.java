@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 
 import com.hritik.articlereader.R;
 
-public class Fragment_settings extends Fragment {
+public class Fragment_share extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_settings, container, false);
+        return inflater.inflate(R.layout.fragment_share, container, false);
     }
 }

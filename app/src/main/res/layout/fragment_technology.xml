@@ -18,8 +18,8 @@
             android:autoStart="true"
             android:background="@color/black"
             android:flipInterval="4500"
-            android:inAnimation="@android:anim/fade_in"
-            android:outAnimation="@android:anim/fade_out"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
             android:overScrollMode="always"
             android:scrollbars="vertical">
 
@@ -28,19 +28,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@color/hamburger_header"
-                android:src="@drawable/logo_banner" />
+                android:src="@drawable/logo_banner_small" />
 
             <ImageView
                 android:id="@+id/car_live"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/live_banner" />
+                android:src="@drawable/live_banner_small" />
 
             <ImageView
                 android:id="@+id/car_discover"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/discover_banner" />
+                android:src="@drawable/discover_banner_small" />
 
         </ViewFlipper>
 

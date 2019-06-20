@@ -23,7 +23,7 @@ import com.hritik.articlereader.fragments.Fragment_discover;
 import com.hritik.articlereader.fragments.Fragment_entertainment;
 import com.hritik.articlereader.fragments.Fragment_live;
 import com.hritik.articlereader.fragments.Fragment_profile;
-import com.hritik.articlereader.fragments.Fragment_settings;
+import com.hritik.articlereader.fragments.Fragment_share;
 import com.hritik.articlereader.fragments.Fragment_sports;
 import com.hritik.articlereader.fragments.Fragment_technology;
 import com.makeramen.roundedimageview.RoundedImageView;
@@ -166,8 +166,8 @@ public class Hamburger_menu extends AppCompatActivity
                 fragment = new Fragment_discover();
                 break;
 
-            case R.id.hamburger_settings:
-                fragment = new Fragment_settings();
+            case R.id.hamburger_share:
+                fragment = new Fragment_share();
                 break;
 
             case R.id.hamburger_about_us:

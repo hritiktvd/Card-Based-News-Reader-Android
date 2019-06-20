@@ -29,9 +29,9 @@
             <group android:checkableBehavior="single">
 
                 <item
-                    android:id="@+id/hamburger_settings"
-                    android:icon="@drawable/ic_hamburger_settings"
-                    android:title="@string/hamburger_settings" />
+                    android:id="@+id/hamburger_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/share" />
                 <item
                     android:id="@+id/hamburger_about_us"
                     android:icon="@drawable/ic_hamburger_about_us"
