@@ -10,6 +10,7 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.hritik.articlereader.R;
 import com.hritik.articlereader.live.Live_news;
@@ -91,21 +92,25 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
             case R.id.aajtak:
                 Intent i_aaajtak = new Intent(getActivity(), Live_news.class);
                 i_aaajtak.putExtra("v_id", aajtak);
+                Toast.makeText(getActivity(), "Courtesy:Aaj Tak", Toast.LENGTH_LONG).show();
                 startActivity(i_aaajtak);
                 break;
             case R.id.abpnews:
                 Intent i_abp = new Intent(getActivity(), Live_news.class);
                 i_abp.putExtra("v_id", abpnews);
+                Toast.makeText(getActivity(), "Courtesy:ABP News", Toast.LENGTH_LONG).show();
                 startActivity(i_abp);
                 break;
             case R.id.aljazeera:
                 Intent i_aljz = new Intent(getActivity(), Live_news.class);
                 i_aljz.putExtra("v_id", aljazeera);
+                Toast.makeText(getActivity(), "Courtesy:Al Jazeera", Toast.LENGTH_LONG).show();
                 startActivity(i_aljz);
                 break;
             case R.id.abcnews:
                 Intent i_blm = new Intent(getActivity(), Live_news.class);
                 i_blm.putExtra("v_id", abcnews);
+                Toast.makeText(getActivity(), "Courtesy:ABC News", Toast.LENGTH_LONG).show();
                 startActivity(i_blm);
                 break;
             case R.id.cbsnews:
@@ -115,6 +120,7 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
             case R.id.indiatv:
                 Intent i_itv = new Intent(getActivity(), Live_news.class);
                 i_itv.putExtra("v_id", indiatv);
+                Toast.makeText(getActivity(), "Courtesy:India TV", Toast.LENGTH_LONG).show();
                 startActivity(i_itv);
                 break;
             case R.id.linustv:
@@ -124,21 +130,25 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
             case R.id.nasa:
                 Intent i_nasa = new Intent(getActivity(), Live_news.class);
                 i_nasa.putExtra("v_id", nasa);
+                Toast.makeText(getActivity(), "Courtesy:NASA", Toast.LENGTH_LONG).show();
                 startActivity(i_nasa);
                 break;
             case R.id.cnnnews:
                 Intent i_ndtv = new Intent(getActivity(), Live_news.class);
                 i_ndtv.putExtra("v_id", cnnnews);
+                Toast.makeText(getActivity(), "Courtesy:NDTV", Toast.LENGTH_LONG).show();
                 startActivity(i_ndtv);
                 break;
             case R.id.republictv:
                 Intent i_repub = new Intent(getActivity(), Live_news.class);
                 i_repub.putExtra("v_id", republictv);
+                Toast.makeText(getActivity(), "Courtesy:Republic TV", Toast.LENGTH_LONG).show();
                 startActivity(i_repub);
                 break;
             case R.id.skynews:
                 Intent i_sky = new Intent(getActivity(), Live_news.class);
                 i_sky.putExtra("v_id", skynews);
+                Toast.makeText(getActivity(), "Courtesy:Sky News", Toast.LENGTH_LONG).show();
                 startActivity(i_sky);
                 break;
             case R.id.tailosivetv:
@@ -152,6 +162,7 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
             case R.id.twittv:
                 Intent i_twit = new Intent(getActivity(), Live_news.class);
                 i_twit.putExtra("v_id", twittv);
+                Toast.makeText(getActivity(), "Courtesy:Twit TV", Toast.LENGTH_LONG).show();
                 startActivity(i_twit);
                 break;
             case R.id.zoomtv:
@@ -161,11 +172,13 @@ public class Fragment_live extends Fragment implements View.OnClickListener {
             case R.id.indiatoday:
                 Intent i_itoday = new Intent(getActivity(), Live_news.class);
                 i_itoday.putExtra("v_id", indiatoday);
+                Toast.makeText(getActivity(), "Courtesy:India Today", Toast.LENGTH_LONG).show();
                 startActivity(i_itoday);
                 break;
             case R.id.newsnation:
                 Intent i_newsnation = new Intent(getActivity(), Live_news.class);
                 i_newsnation.putExtra("v_id", newsnation);
+                Toast.makeText(getActivity(), "Courtesy:News Nation456", Toast.LENGTH_LONG).show();
                 startActivity(i_newsnation);
                 break;
 

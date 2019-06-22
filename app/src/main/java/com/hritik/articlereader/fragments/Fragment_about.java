@@ -80,7 +80,7 @@ public class Fragment_about extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto", "interno.ar.solutions@gmail.com", null));
+                        "mailto", "interno.xr.solutions@gmail.com", null));
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Query:");
                 startActivity(Intent.createChooser(emailIntent, null));
             }
