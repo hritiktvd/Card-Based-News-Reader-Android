@@ -1,4 +1,4 @@
-# Articlereader
+# Tidbits: Live News (Card Based Article Reader)
 
 A news reader app with amazing UI.
 Card Based layout for reading all the headlines quickly and on the go.
