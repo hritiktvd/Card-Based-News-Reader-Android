@@ -2,7 +2,8 @@
 
 
 Available on Playstore as Tidbits:Live News
-https://play.google.com/store/apps/details?id=com.hritik.articlereader
+https://play.google.com/store/apps/details?id=com.hritik.articlereader 
+
 Two Most Important features built into one so that you can watch and read on the go!
 
 Tidbits lets you:
